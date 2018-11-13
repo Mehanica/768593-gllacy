@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алёна Маркова](https://up.htmlacademy.ru/htmlcss/23/user/768593).
-* Наставник: [Ксения Торкова](https://htmlacademy.ru/profile/id23249).
+* Наставник: [Ксения Торкова](https://up.htmlacademy.ru/htmlcss/23/user/23249).
 
 ---
 
