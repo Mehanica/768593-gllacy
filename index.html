@@ -8,7 +8,7 @@
   <body>
     <header class="main-header">
       <nav class="main-menu">
-        <a class="main-header-logo>
+        <a class="main-header-logo">
           <img src="" width="154" height="64" alt="логотип Gllacy Shop">
         </a>
 
@@ -28,13 +28,14 @@
         </ul>
 
         <ul class="user-navigation">
-          <li class="search"><button type="button">Поиск</button></li>
-          <li class="login"><button type="button">Вход</button></li>
+          <li class="search"><a href="#">Поиск</a></li>
+          <li class="login"><a href="#">Вход</a></li>
           <li class="basket"><a href="#">Пусто</a></li>
         </ul>
-
-        <p>C 10 до 20, ежедневно<br><b>8 812 450-25-25</b></p>
       </nav>
+
+      <p>C 10 до 20, ежедневно</p>
+      <a href="tel:88124502525">8 812 450-25-25</a>
     </header>
 
     <main class="container">
@@ -42,10 +43,22 @@
 
       <div class="slider">
         <div class="slider-inner">
-          <div class="slider-slides">
+          <div class="slider-item">
             <img src="" alt="Крем-брюле и пломбир с малиновым джемом">
+            <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+            <a class="button" href="#">Давайте оба!</a>
+          </div>
+
+          <div class="slider-item">
             <img src="" alt="Шоколфдный пломбир и лимонный сорбет">
+            <h2>Шоколфдный пломбир и лимонный сорбет</h2>
+            <a class="button" href="#">Давайте оба!</a>
+          </div>
+
+          <div class="slider-item">
             <img src="" alt="Пломбир с помадкой и клубничный щербет">
+            <h2>Пломбир с помадкой и клубничный щербет</h2>
+            <a class="button" href="#">Давайте оба!</a>
           </div>
         </div>
   
@@ -58,8 +71,6 @@
           <label for="btn-2"></label>
           <label for="btn-3"></label>
         </div>
-
-        <button class="button" type="button">Давайте оба!</button>
       </div>
 
       <section class="offers">
@@ -70,9 +81,7 @@
 
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 
-          <a href="#">
-            <span class="button">Хочу варенье!</span>
-          </a>
+          <a href="#" class="button">Хочу варенье!</a>
         </article>
 
         <article class="offer-item">
@@ -80,9 +89,7 @@
 
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 
-          <a href="#">
-            <span class="button">Хочу шоколадки!</span>
-          </a>
+          <a href="#" class="button">Хочу шоколадки!</a>
         </article>
       </section>
       
@@ -95,12 +102,14 @@
           </p>
 
           <p class="catalog-item-price">
-            <b>310₽<b><span>/кг</span>
-
-            <a href="#">
-              <h4 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
-            </a>
+            <b>310₽</b><span>/кг</span>
           </p>
+
+          <a href="#">
+            <h4 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
+          </a>
+          
+          <a href="#" class="button">Быстрый просмотр</a>
         </article>
 
         <article class="catalog-item catolog-item-hit">
@@ -109,12 +118,14 @@
           </p>
 
           <p class="catalog-item-price">
-            <b>380₽<b><span>/кг</span>
-
-            <a href="#">
-              <h4 class="catalog-item-title">Сливочное-кофейное с кусочками шоколада</h4>
-            </a>
+            <b>380₽</b><span>/кг</span>
           </p>
+
+          <a href="#">
+            <h4 class="catalog-item-title">Сливочное-кофейное с кусочками шоколада</h4>
+          </a>
+
+          <a href="#" class="button">Быстрый просмотр</a>
         </article>
 
         <article class="catalog-item catolog-item-hit">
@@ -123,12 +134,14 @@
           </p>
 
           <p class="catalog-item-price">
-            <b>355₽<b><span>/кг</span>
-
-            <a href="#">
-              <h4 class="catalog-item-title">Сливочное-клубничное с присыпкой из белого шоколад</h4>
-            </a>
+            <b>355₽</b><span>/кг</span>
           </p>
+
+          <a href="#">
+            <h4 class="catalog-item-title">Сливочное-клубничное с присыпкой из белого шоколад</h4>
+          </a>
+
+          <a href="#" class="button">Быстрый просмотр</a>
         </article>
 
         <article class="catalog-item catolog-item-hit">
@@ -137,12 +150,14 @@
           </p>
 
           <p class="catalog-item-price">
-            <b>415₽<b><span>/кг</span>
-
-            <a href="#">
-              <h4 class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</h4>
-            </a>
+            <b>415₽</b><span>/кг</span>
           </p>
+
+          <a href="#">
+            <h4 class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</h4>
+          </a>
+
+          <a href="#" class="button">Быстрый просмотр</a>
         </article>
       </section>
 
@@ -190,7 +205,7 @@
 
           <p>
             <span>Для заказов по телефону:</span>
-            <b> 8 812 450-25-25</b>
+            <a href="tel:88124502525">8 812 450-25-25</a>
             <span>(с 10 до 20 ежедневно)</span>
           </p>
 
@@ -207,14 +222,12 @@
         <li><a class="social-btn" href="https://vk.com/htmlacademy">Вконтакте</a></li>
       </ul>
 
-      <nav class="footer-navigation">
-        <ul class="footer-menu">
-          <a href="#"><li>Для поставщиков</li></a>
-          <a href="#"><li>О производстве</li></a>
-          <a href="#"><li>Наши документы</li></a>
-          <a href="#"><li>Экологические стандарты</li></a>
-        </ul>
-      </nav>
+      <ul class="footer-menu">
+        <li><a href="#">Для поставщиков</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
 
       <div class="htmlacademy-link">
         <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
@@ -231,8 +244,8 @@
     <div class="login">
       <form>
         <input type="email" placeholder="Электронная почта" name="mail">
-        <input type="password" placeholder="Пароль">
-        <button class="button" type="button">Войти</button>
+        <input type="password" placeholder="Пароль" name="password">
+        <button class="button" type="submit">Войти</button>
 
         <a href="#">
           <p>Забыли пароль?</p>
@@ -246,10 +259,11 @@
 
     <div class="search">
       <input type="search" placeholder="Что ищем?">
+      <button type="submit" class="visually-hidden">поиск</button>
     </div>
 
     <div class="feedback">
-      <h1>Мы обязательно вам ответим!</h1>
+      <h3>Мы обязательно вам ответим!</h3>
 
       <input type="text" name="name" placeholder="Как вас зовут?">
       <input type="email" name="mail" placeholder="Ваша почта для ответа?">
