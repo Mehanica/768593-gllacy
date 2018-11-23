@@ -30,7 +30,7 @@
         <ul class="user-navigation">
           <li class="search"><a href="#">Поиск</a></li>
           <li class="login"><a href="#">Вход</a></li>
-          <li class="basket"><a href="#">Пусто</a></li>
+          <li class="basket"><a href="#"  aria-label="Корзина">Пусто</a></li>
         </ul>
       </nav>
 
@@ -67,9 +67,9 @@
         <input type="radio" id="btn-3" name="toggle">
 
         <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
+          <label for="btn-1">slide1</label>
+          <label for="btn-2">slide2</label>
+          <label for="btn-3">slide3</label>
         </div>
       </div>
 
@@ -192,7 +192,9 @@
       <form class="subscribe-form">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 
-        <input type="email" name="mail" placeholder="Электронная почта">
+        <label class="visually-hidden" for="subscriber-email">поле для ввода электронной почты подписчика</label>
+        <input type="email" name="mail" placeholder="Электронная почта" id="subscriber-email">
+
         <button class="button" type="submit">Отправить</button>
       </form>
 
@@ -241,34 +243,43 @@
       </div>
     </footer>
 
-    <div class="login">
-      <form>
-        <input type="email" placeholder="Электронная почта" name="mail">
-        <input type="password" placeholder="Пароль" name="password">
-        <button class="button" type="submit">Войти</button>
+    <form class="login" method="post" action="https://echo.htmlacademy.ru">
+      <label class="visually-hidden" for="user-email">поле для ввода электронной почты пользователя</label>
+      <input type="email" name="mail" placeholder="Электронная почта" id="user-email">
 
-        <a href="#">
-          <p>Забыли пароль?</p>
-        </a>
+      <label class="visually-hidden" for="user-password">поле для ввода пароля пользователя</label>
+      <input type="password" name="password" placeholder="Пароль" id="user-password">
 
-        <a href="#">
-          <span>Новая регистрация</span>
-        </a>
-      </form>
-    </div>
+      <button class="button" type="submit">Войти</button>
 
-    <div class="search">
-      <input type="search" placeholder="Что ищем?">
+      <a href="#"> 
+        <p>Забыли пароль?</p>
+      </a>
+
+      <a href="#">
+        <span>Новая регистрация</span>
+      </a>
+    </form>
+
+    <form class="search" method="post" action="https://echo.htmlacademy.ru">
+      <label class="visually-hidden" for="search-field">поле для поиска</label>
+      <input type="search" name="search" placeholder="Что ищем?" id="search-field">
+
       <button type="submit" class="visually-hidden">поиск</button>
-    </div>
+    </form>
 
-    <div class="feedback">
+    <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
       <h3>Мы обязательно вам ответим!</h3>
 
-      <input type="text" name="name" placeholder="Как вас зовут?">
-      <input type="email" name="mail" placeholder="Ваша почта для ответа?">
-      <textarea placeholder="Напишите что-нибудь..."></textarea>
+      <label class="visually-hidden" for="registration-name">поле для ввода имени пользователя</label>
+      <input type="text" name="name" placeholder="Как вас зовут?" id="registration-name">
+
+      <label class="visually-hidden" for="registration-email">поле для ввода электронной почты пользователя</label>
+      <input type="email" name="mail" placeholder="Ваша почта для ответа?" id="registration-email">
+
+      <label class="visually-hidden" for="registration-comments">поле для ввода коментариев пользователя</label>
+      <textarea name="comments" placeholder="Напишите что-нибудь..." id="registration-comments"></textarea>
       <button type="submit" class="button">Отправить</button>
-    </div>
+    </form>
   </body>
 </html>
