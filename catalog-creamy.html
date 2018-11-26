@@ -48,10 +48,13 @@
 
       <h1>Сливочное мороженое</h1>
 
-      <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <label for="sorting">Сортировка:</label>
         <select name="sorting" id="sorting">
-          <option value="popular" id="sorting">по популярности</option>
+          <option value="popular">по популярности</option>
+          <option value="not-expensive">сначала не дорогие</option>
+          <option value="expensive">сначала дорогие</option>
+          <option value="fat-content">по жирности<option>
         </select>
 
         <label for="price">Цена: 100 руб. - 500 руб.</label>
@@ -97,7 +100,7 @@
           </label>
         </p>
 
-        <button class="form-button" type="button">Применить</button>
+        <button class="form-button" type="submit">Применить</button>
       </form>
 
       <section class="catalog">
@@ -334,7 +337,7 @@
       </div>
     </footer>
 
-    <form class="login"method="post" action="https://echo.htmlacademy.ru">
+    <form class="login" method="post" action="https://echo.htmlacademy.ru">
       <label class="visually-hidden" for="user-email">поле для ввода электронной почты пользователя</label>
       <input type="email" name="mail" placeholder="Электронная почта" id="user=email">
 
