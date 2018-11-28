@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -15,7 +18,7 @@
         <ul class="site-navigation">
           <li><a href="#">Каталог</a>
             <ul>
-              <li><strong><a href="#">Новинки</a></strong></li>
+              <li class="active-item"><strong><a href="#">Новинки</a></strong></li>
               <li><a href="catalog-creamy.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -28,14 +31,14 @@
         </ul>
 
         <ul class="user-navigation">
-          <li class="search"><a href="#">Поиск</a></li>
-          <li class="login"><a href="#">Вход</a></li>
-          <li class="basket"><a href="#"  aria-label="Корзина">Пусто</a></li>
+          <li><a class="search" href="#"><span class="visually-hidden">Поиск</span></a></li>
+          <li><a class="login" href="#">Вход</a></li>
+          <li><a class="basket" href="#"  aria-label="Корзина">Пусто</a></li>
         </ul>
       </nav>
 
       <p>C 10 до 20, ежедневно</p>
-      <a href="tel:88124502525">8 812 450-25-25</a>
+      <a class="phone" href="tel:88124502525">8 812 450-25-25</a>
     </header>
 
     <main class="container">
@@ -84,7 +87,7 @@
           <a href="#" class="button">Хочу варенье!</a>
         </article>
 
-        <article class="offer-item">
+        <article class="offers-item">
           <h3>Шоколадки даром!</h3>
 
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
@@ -102,7 +105,7 @@
           </p>
 
           <p class="catalog-item-price">
-            <b>310₽</b><span>/кг</span>
+            <b>310</b><span>₽/кг</span>
           </p>
 
           <a href="#">
@@ -118,7 +121,7 @@
           </p>
 
           <p class="catalog-item-price">
-            <b>380₽</b><span>/кг</span>
+            <b>380</b><span>₽/кг</span>
           </p>
 
           <a href="#">
@@ -134,7 +137,7 @@
           </p>
 
           <p class="catalog-item-price">
-            <b>355₽</b><span>/кг</span>
+            <b>355</b><span>₽/кг</span>
           </p>
 
           <a href="#">
@@ -150,7 +153,7 @@
           </p>
 
           <p class="catalog-item-price">
-            <b>415₽</b><span>/кг</span>
+            <b>415</b><span>₽/кг</span>
           </p>
 
           <a href="#">
@@ -162,22 +165,22 @@
       </section>
 
       <section class="features">
-        <h3>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+        <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
 
         <ul class="features-list">
-          <li class="featre-item">
+          <li class="feature-item1">
             <p>Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           </li>
 
-          <li class="featre-item">
+          <li class="feature-item2">
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
 
-          <li class="featre-item">
+          <li class="feature-item3">
             <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           </li>
 
-          <li class="featre-item">
+          <li class="feature-item4">
             <p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
@@ -189,14 +192,16 @@
         <a href="#"><p>10 способов сервировки фруктовых щербетов к столу</p></a>
       </article>
 
-      <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+      <div class="subscribe">
+        <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 
-        <label class="visually-hidden" for="subscriber-email">поле для ввода электронной почты подписчика</label>
-        <input type="email" name="mail" placeholder="Электронная почта" id="subscriber-email">
+          <label class="visually-hidden" for="subscriber-email">поле для ввода электронной почты подписчика</label>
+          <input type="email" name="mail" placeholder="Электронная почта" id="subscriber-email">
 
-        <button class="button" type="submit">Отправить</button>
-      </form>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </div>
 
       <section class="map">
         <section class="address">
@@ -218,10 +223,10 @@
 
     <footer>
       <ul class="social">
-        <li><a class="social-btn" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Твиттер</span></a></li>
-        <li><a class="social-btn" href="https://instagram.com/htmlacademy"><span class="visually-hidden">Инстаграм</span></a></li>
-        <li><a class="social-btn" href="https://facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li><a class="social-btn" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a class="social-btn social-btn-tw" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Твиттер</span></a></li>
+        <li><a class="social-btn social-btn-inst" href="https://instagram.com/htmlacademy"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li><a class="social-btn social-btn-fb" href="https://facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a class="social-btn social-btn-vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a></li>
       </ul>
 
       <ul class="footer-menu">
