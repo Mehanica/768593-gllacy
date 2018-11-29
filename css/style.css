@@ -7,8 +7,18 @@ body {
   line-height: 22px;
   font-weight: medium;
   color: #ffffff;
+}
 
-  background-color: #98ada1;
+.background-blue {
+  background-color: #8996a6;
+}
+
+.background-beige {
+  background-color: #9d8b84;
+}
+
+.background-olive {
+  background-color: #849d8f;
 }
 
 .visually-hidden {
@@ -19,14 +29,13 @@ body {
   margin: -1px;
 }
 
-
 .main-menu {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
 
-  background-color: #98ada1;
+
 }
 
 .site-navigation,
@@ -126,14 +135,14 @@ body {
   font-weight: 700;
 
   color: #ffffff;
-  background: #ef6241;
+  background-image: linear-gradient(to bottom, rgb(231, 74, 53), rgb(242, 104, 67));
   text-decoration: none;
 }
 
 .button:hover,
 .button:focus {
   color: #ffffff;
-  background: #f38267;
+  background-image: linear-gradient(to bottom, rgba(231, 74, 53, 0.8), rgba(242, 104, 67, 0.8));
 }
 
 .slider-item .button {
@@ -159,7 +168,7 @@ a active {
 
 .offers h3 {
   font-size: 35px;
-  line-heigth: 41px;
+  line-height: 41px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -226,7 +235,7 @@ a active {
 
 .features h3 {
   font-size: 24px;
-  line-heigth: 30px;
+  line-height: 30px;
   font-weight: 400;
   color: #000000;
 }
@@ -277,7 +286,7 @@ a active {
 }
 
 .news-in-blog {
-  font-weigth: 500;
+  font-weight: 500;
   color: #000000;
   background-image: url("../img/strawberry-background1.jpg");
   background-repeat: no-repeat;
@@ -358,25 +367,132 @@ input {
 .social-btn {
   display: inline-block;
   vertical-align: middle;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background-repeat: no-repeat;
 }
 
-.social-btn-tw {
+.social-btn-tw,
+.social-btn-tw:active {
   background-image: url("../img/twitter.svg");
+  opacity: 0.8;
 }
 
-.social-btn-inst {
+.social-btn-tw::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  opacity: 0.5;
+  left: 36px;
+  top: -4px;
+}
+
+.social-btn-tw:hover::before,
+.social-btn-tw:focus::before,
+.social-btn-tw:active::before {
+  opacity: 0.7;
+}
+
+.social-btn-tw:hover,
+.social-btn-tw:focus {
+  background-image: url("../img/twitter.svg");
+  opacity: 1;
+}
+
+
+
+.social-btn-inst,
+.social-btn-inst:active {
   background-image: url("../img/instagram.svg");
+  opacity: 0.8;
 }
 
-.social-btn-fb {
+.social-btn-inst::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  opacity: 0.5;
+  left: 36px;
+  top: 28px;
+}
+
+.social-btn-inst:hover::before,
+.social-btn-inst:focus::before,
+.social-btn-inst:active::before {
+  opacity: 0.7;
+}
+
+.social-btn-inst:hover,
+.social-btn-inst:focus {
+  background-image: url("../img/instagram.svg");
+  opacity: 1;
+}
+
+
+.social-btn-fb,
+.social-btn-fb:active {
   background-image: url("../img/fb.svg");
+  opacity: 0.8;
 }
 
-.social-btn-vk {
+.social-btn-fb::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  opacity: 0.5;
+  left: 36px;
+  top: 60px;
+}
+
+.social-btn-fb:hover::before,
+.social-btn-fb:focus::before,
+.social-btn-fb:active::before {
+  opacity: 0.7;
+}
+
+.social-btn-fb:hover,
+.social-btn-fb:focus {
+  background-image: url("../img/fb.svg");
+  opacity: 1;
+}
+
+.social-btn-vk,
+.social-btn-vk:active {
   background-image: url("../img/vk.svg");
+  opacity: 0.8;
+}
+
+.social-btn-vk::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  opacity: 0.5;
+  left: 36px;
+  top: 92px;
+}
+
+.social-btn-vk:hover::before,
+.social-btn-vk:focus::before,
+.social-btn-vk:active::before {
+  opacity: 0.7;
+}
+
+.social-btn-vk:hover,
+.social-btn-vk:focus {
+  background-image: url("../img/vk.svg");
+  opacity: 1;
 }
 
 .footer-menu {
@@ -430,7 +546,7 @@ input {
 }
 
 .paginator .next {
-  text-indent: 1000px;
+  text-indent: -1000px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -438,4 +554,10 @@ input {
 
 .arrow-disabled {
   opacity: 0.2;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 16px;
 }
