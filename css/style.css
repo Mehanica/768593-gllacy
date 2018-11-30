@@ -550,12 +550,16 @@ body {
 .footer-menu a:active,
 .htmlacademy:hover,
 .htmlacademy:focus,
-.htmlacademy:active {
+.htmlacademy:active,
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
   color: #ffbc9e;
   box-shadow: 0 1px 0 0 #a7a294;
 }
 
-.htmlacademy {
+.htmlacademy,
+.breadcrumbs a {
   color: #ffffff;
   text-decoration: none;
   box-shadow: 0 1px 0 0 #adbdb4;
