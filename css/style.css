@@ -188,6 +188,7 @@ body {
 }
 
 .catalog-item h4 {
+  display: inline;
   color: #ffffff;
   box-shadow: 0 1px 0 0 #adbdb4;
 }
