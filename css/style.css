@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: medium;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -33,9 +33,6 @@ body {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  color: #ffffff;
-
-
 }
 
 .site-navigation,
@@ -50,24 +47,62 @@ body {
   font-weight: 400;
 }
 
+.main-menu-element > a {
+  box-shadow: 0 1px 0 0 #adbdb4;
+}
+
+.main-menu-element:hover > a,
+.main-menu-element:focus > a,
+.main-menu-element:active > a {
+  box-shadow: none;
+}
+
+.main-menu-element > a:hover,
+.main-menu-element > a:focus,
+.main-menu-element > a:active {
+  color: #000000;
+
+}
+
 .site-navigation a,
 .user-navigation a {
   color: #ffffff;
+  text-decoration: none;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
-  color: #000000;
-  text-decoration: none;
+.site-navigation li:hover,
+.site-navigation li:focus,
+.site-navegation li:active {
   background-color: #ffffff;
 }
 
-.site-navigation ul a:hover,
-.site-navigation ul a:focus {
+.site-navigation li:hover a,
+.site-navigation li:focus a {
+  color: #000000;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+  margin: 0;
+  bottom: -80px;
+}
+
+.sub-menu-container {
+  position: relative;
+}
+
+.sub-menu-container:hover .sub-menu,
+.sub-menu-container:focus .sub-menu {
+  display: block;
+}
+
+.site-navigation ul li:hover,
+.site-navigation ul li:focus {
   background-color: #fbded7;
 }
 
-.site-navigation ul a:active {
+.site-navigation ul li:active {
   background-color: #f6b5a5
 }
 
@@ -97,7 +132,6 @@ body {
 
 .user-navigation {
   position: relative;
-  display: inline-block;
 }
 
 .user-navigation .search {
@@ -149,15 +183,20 @@ body {
   font-size: 32px;
   line-height: 44px;
 }
-
-a {
-  color: #ffffff;
+.catalog-item a {
+  text-decoration: none;
 }
 
-a:hover,
-a:focus,
-a active {
+.catalog-item h4 {
+  color: #ffffff;
+  box-shadow: 0 1px 0 0 #adbdb4;
+}
+
+.catalog-item h4:hover,
+.catalog-item h4:focus,
+.catalog-item h4:active {
   color: #ffbc9e;
+  box-shadow: 0 1px 0 0 #a7a294;
 }
 
 .slider h2 {
@@ -178,15 +217,17 @@ a active {
   font-weight: 700;
 }
 
-.offers-item:first-of-type {
-  background-image: url("../img/crimson-background.jpg");
+.offers-item {
   background-repeat: no-repeat;
+}
+
+.offers-item-crimson {
+  background-image: url("../img/crimson-background.jpg");
   background-color: #b65972;
 }
 
-.offers-item:last-of-type {
+.offers-item-chockolate {
   background-image: url("../img/chockolate-background.jpg");
-  background-repeat: no-repeat;
   background-color: #654336;
 }
 
@@ -203,7 +244,7 @@ a active {
   position: relative;
 }
 
-.catalog-item-image::after {
+.catalog-item-hit .catalog-item-image::after {
   content: "";
   position: absolute;
   width: 60px;
@@ -236,7 +277,7 @@ a active {
 .features h3 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -245,7 +286,7 @@ a active {
   color: #000000;
 }
 
-.features-list{
+.features-list li{
   position: relative;
 }
 
@@ -287,7 +328,7 @@ a active {
 
 .news-in-blog {
   font-weight: 500;
-  color: #000000;
+  color: #323232;
   background-image: url("../img/strawberry-background1.jpg");
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -312,13 +353,8 @@ a active {
   background-color: #f8f7f4;
 }
 
-form {
-  color: #999999;
-  background-color: #f8f7f4;
-}
-
-input {
-  background-color: #ffffff;
+.subscribe p {
+  color: #5a5a5a;
 }
 
 .map {
@@ -348,7 +384,7 @@ input {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
+  color: #323232;
 }
 
 .address a {
@@ -356,7 +392,7 @@ input {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  color: #000000;
+  color: #323232;
 }
 
 .social {
@@ -503,6 +539,25 @@ input {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 1px 0 0 #adbdb4;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus,
+.footer-menu a:active,
+.htmlacademy:hover,
+.htmlacademy:focus,
+.htmlacademy:active {
+  color: #ffbc9e;
+  box-shadow: 0 1px 0 0 #a7a294;
+}
+
+.htmlacademy {
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 1px 0 0 #adbdb4;
 }
 
 .footer-menu li:first-of-type a{

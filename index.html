@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="background-olive background-blue background-beige">
+  <body class="background-olive">
     <header class="main-header">
       <nav class="main-menu">
         <a class="main-header-logo">
@@ -16,9 +16,9 @@
         </a>
 
         <ul class="site-navigation">
-          <li><a href="#">Каталог</a>
-            <ul>
-              <li class="active-item"><strong><a href="#">Новинки</a></strong></li>
+          <li class="main-menu-element sub-menu-container"><a href="#">Каталог</a>
+            <ul class="sub-menu">
+              <li><strong><a href="#">Новинки</a></strong></li>
               <li><a href="catalog-creamy.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -26,8 +26,8 @@
             </ul>
           </li>
 
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Компании</a></li>
+          <li class="main-menu-element"><a href="#">Доставка и оплата</a></li>
+          <li class="main-menu-element"><a href="#">О Компании</a></li>
         </ul>
 
         <ul class="user-navigation">
@@ -79,7 +79,7 @@
       <section class="offers">
         <h2 class="visually-hidden">Предложения</h2>
 
-        <article class="offers-item">
+        <article class="offers-item offers-item-crimson">
           <h3>Малинка даром!</h3>
 
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -87,7 +87,7 @@
           <a href="#" class="button">Хочу варенье!</a>
         </article>
 
-        <article class="offers-item">
+        <article class="offers-item offers-item-chockolate">
           <h3>Шоколадки даром!</h3>
 
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
@@ -99,7 +99,7 @@
       <section class="catalog">
         <h2 class="visually-hidden">карточки товаров</h2>
 
-        <article class="catalog-item catolog-item-hit">
+        <article class="catalog-item catalog-item-hit">
           <p class="catalog-item-image">
             <img src="img/cream-with-orange-jam.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           </p>
@@ -242,7 +242,7 @@
         </a>
   
         <p>Сделано в 
-          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
+          <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
           © 2017
         </p>
       </div>
