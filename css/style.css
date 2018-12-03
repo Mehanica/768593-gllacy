@@ -16,7 +16,6 @@ body {
 }
 
 .container {
-
   margin: 0 auto;
   padding: 0 27px;
   width: 1200px;
@@ -80,6 +79,7 @@ body {
 .contact-wrapper {
   outline: 3px solid green;
   width: 267px;
+  margin-left: auto;
 }
 
 .contact-wrapper p {
@@ -261,12 +261,16 @@ body {
   width: 280px;
   height:64px;
   border-radius: 32px;
+
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .button {
   display: inline-block;
   margin: 0 auto;
-
+  height: 44px;
+  border-radius: 22px;
 
   font-size: 18px;
   line-height: 24px;
@@ -281,12 +285,6 @@ body {
 .button:focus {
   color: #ffffff;
   background-image: linear-gradient(to bottom, rgba(231, 74, 53, 0.8), rgba(242, 104, 67, 0.8));
-}
-
-.slider-item .button {
-  font-size: 32px;
-  line-height: 44px;
-
 }
 
 form {
@@ -334,9 +332,27 @@ form {
 }
 
 .offers-item {
+  display: flex;
+  flex-direction: column;
   width: 560px;
+  height: 229px;
   background-repeat: no-repeat;
   border-radius: 15px;
+}
+
+.offers-item h3 {
+
+}
+
+.offers-item .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+
+  width: 189px;
+  height: 45px;
+  border-radius: 22.5px;
 }
 
 .offers-item-crimson {
@@ -366,6 +382,9 @@ form {
 
 .catalog-item .button {
   display: none;
+  text-align: center;
+  vertical-align: center;
+  width: 200px;
 }
 
 .catalog-item:hover .button {
@@ -475,7 +494,6 @@ form {
 
 .news-in-blog {
   width: 560px;
-
   font-weight: 500;
   color: #323232;
   background-image: url("../img/strawberry-background1.jpg");
@@ -559,7 +577,6 @@ form {
   display: flex;
   align-items: center;
   margin: 0;
-
   padding: 0;
   list-style: none;
   width: 267px;
