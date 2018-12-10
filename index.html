@@ -126,6 +126,7 @@
 
             <p class="catalog-item-price">
               <b>310</b>
+              <span class="ruble">₽</span>
               <span>/кг</span>
             </p>
 
@@ -143,6 +144,7 @@
 
             <p class="catalog-item-price">
               <b>380</b>
+              <span class="ruble">₽</span>
               <span>/кг</span>
             </p>
 
@@ -160,6 +162,7 @@
 
             <p class="catalog-item-price">
               <b>355</b>
+              <span class="ruble">₽</span>
               <span>/кг</span>
             </p>
 
@@ -177,6 +180,7 @@
 
             <p class="catalog-item-price">
               <b>415</b>
+              <span class="ruble">₽</span>
               <span>/кг</span>
             </p>
 
@@ -276,32 +280,34 @@
         </div>
       </footer>
 
-      <form class="login" method="post" action="https://echo.htmlacademy.ru">
+      <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
         <label class="visually-hidden" for="user-email">поле для ввода электронной почты пользователя</label>
         <input type="email" name="mail" placeholder="Электронная почта" id="user-email">
 
         <label class="visually-hidden" for="user-password">поле для ввода пароля пользователя</label>
         <input type="password" name="password" placeholder="Пароль" id="user-password">
-
-        <button class="button" type="submit">Войти</button>
-
-        <a href="#"> 
-          <p>Забыли пароль?</p>
-        </a>
-
-        <a href="#">
-          <span>Новая регистрация</span>
-        </a>
+        <div class="button-link-wrapper">
+          <button class="button" type="submit">Войти</button>
+          <div>
+            <a href="#"> 
+              <p>Забыли пароль?</p>
+            </a>
+          
+            <a href="#">
+              <span>Новая регистрация</span>
+            </a>
+          </div>
+        </div>
       </form>
 
-      <form class="search" method="post" action="https://echo.htmlacademy.ru">
+      <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
         <label class="visually-hidden" for="search-field">поле для поиска</label>
         <input type="search" name="search" placeholder="Что ищем?" id="search-field">
 
         <button type="submit" class="visually-hidden">поиск</button>
       </form>
 
-      <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
+      <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
         <h3>Мы обязательно вам ответим!</h3>
 
         <label class="visually-hidden" for="registration-name">поле для ввода имени пользователя</label>
@@ -312,7 +318,10 @@
 
         <label class="visually-hidden" for="registration-comments">поле для ввода коментариев пользователя</label>
         <textarea name="comments" placeholder="Напишите что-нибудь..." id="registration-comments"></textarea>
-        <button type="submit" class="button">Отправить</button>
+
+        <div>
+          <button type="submit" class="button">Отправить</button>
+        </div>
       </form>
     </div>
   </body>
