@@ -77,7 +77,7 @@
 
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <div class="sorting-wrapper">
-          <label for="sorting">Сортировка:</label>
+          <label for="sorting"><span class="subtitle">Сортировка:</span></label>
           <select class="sorting" name="sorting" id="sorting">
             <option value="popular">по популярности</option>
             <option value="not-expensive">сначала не дорогие</option>
@@ -86,50 +86,77 @@
           </select>
         </div>
 
-        <div class="price-wrapper">
-          <label for="price">Цена: 100 руб. - 500 руб.</label>
-          <input type="range" name="price" min="0" max="700" step="100" id="price">
+        <div class="price-container">
+          <span class="subtitle">Цена: 100 руб. - 500 руб.</span>
+          <p class="price-wrapper">
+            <label for="price"></label>
+            <input type="range" name="price" min="0" max="700" step="100" id="price">
+          </p>
         </div>
 
-        <p class="fat-wrapper">Жирность
-          <label>
-            <input type="radio" name="fat"> 0%
-          </label>
+        <div class="fat-container">
+          <span class="subtitle">Жирность</span>
+          <p class="fat-wrapper">
+            <label class="fat-radio">
+              <input type="radio" name="fat" class="visually-hidden">
+              <span class="radio-indicator"></span>
+              <span class=caption1>0%<span>
+            </label>
 
-          <label>
-            <input type="radio" name="fat" checked> до 10%
-          </label>
+            <label class="fat-radio">
+                <input type="radio" name="fat" class="visually-hidden" checked>
+                <span class="radio-indicator radio-indicator2"></span>
+                <span class="caption2">до 10%</span>
+            </label>
 
-          <label>
-            <input type="radio" name="fat"> до 30%
-          </label>
+            <label class="fat-radio">
+              <input type="radio" name="fat" class="visually-hidden">
+              <span class="radio-indicator radio-indicator3"></span>
+              <span class="caption3">до 30%</span>
+            </label>
 
-          <label>
-            <input type="radio" name="fat"> выше 30%
-          </label>
-        </p>
+            <label class="fat-radio">
+              <input type="radio" name="fat" class="visually-hidden">
+              <span class="radio-indicator radio-indicator4"></span>
+              <span class="caption4">выше 30%</span>
+            </label>
+          </p>
+        </div>
 
-        <p class="fillers">Наполнители
-          <label>
-            <input type="checkbox" name="chocolate" checked>шоколадные
-          </label>
+        <div class="fillers-container">
+          <span class="subtitle">Наполнители</span>
+          <p class="fillers">
+            <label class="fillers-checkbox">
+              <input type="checkbox" name="chocolate" class="visually-hidden" checked>
+              <span class="checkbox-indicator"></span>
+              <span class="fillers-caption1">шоколадные</span>
+            </label>
 
-          <label>
-            <input type="checkbox" name="sugar-powders" checked>сахарные присыпки
-          </label>
+            <label class="fillers-checkbox">
+              <input type="checkbox" name="sugar-powders" class="visually-hidden" checked>
+              <span class="checkbox-indicator checkbox-indicator2"></span>
+              <span class="fillers-caption2">сахарные присыпки</span>
+            </label>
 
-          <label>
-            <input type="checkbox" name="fruits">фрукты
-          </label>
+            <label class="fillers-checkbox">
+              <input type="checkbox" name="fruits" class="visually-hidden">
+              <span class="checkbox-indicator checkbox-indicator3"></span>
+              <span class="fillers-caption3">фрукты</span>
+            </label>
 
-          <label>
-            <input type="checkbox" name="syrops">сиропы
-          </label>
+            <label class="fillers-checkbox">
+              <input type="checkbox" name="syrops" class="visually-hidden">
+              <span class="checkbox-indicator checkbox-indicator4"></span>
+              <span class="fillers-caption4">сиропы</span>
+            </label>
 
-          <label>
-            <input type="checkbox" name="jams">джемы
-          </label>
-        </p>
+            <label class="fillers-checkbox">
+              <input type="checkbox" name="jams" class="visually-hidden">
+              <span class="checkbox-indicator checkbox-indicator5"></span>
+              <span class="fillers-caption5">джемы</span>
+            </label>
+          </p>
+        </div>
 
         <button class="form-button" type="submit">Применить</button>
       </form>
