@@ -1688,15 +1688,11 @@ padding-left: 46px;
 .login-form input {
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
   padding: 9px;
   padding-left: 12px;
   padding-bottom: 7px;
   margin-bottom: 22px;
   width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #d3d3d2;
-  border-radius: 5px;
 }
 
 .login-form .button {
@@ -1737,7 +1733,6 @@ padding-left: 46px;
 .search-form input {
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
   padding: 9px;
   padding-left: 12px;
   padding-bottom: 7px;
@@ -1799,7 +1794,6 @@ padding-left: 46px;
 .feedback-form input {
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
   letter-spacing: 1px;
   padding: 9px;
   padding-left: 14px;
@@ -1815,7 +1809,6 @@ padding-left: 46px;
 .feedback-form textarea {
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
   letter-spacing: 1px;
   padding: 9px;
   padding-left: 14px;
@@ -1915,7 +1908,6 @@ background-repeat: no-repeat;
 
 .basket-table tr:nth-of-type(2) .ice-cream {
   padding-top: 13px ;
-
 }
 
 .basket-table img {
@@ -1958,4 +1950,26 @@ background-repeat: no-repeat;
 .centerer {
     display: inline-block;
     vertical-align: middle;
+}
+
+.modal-input {
+  color: #000000;
+  font-weight: 700;
+  box-sizing: border-box;
+  height: 44px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  outline: none;
+}
+
+.modal-input:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.modal-input:focus {
+  border: 2px solid #8fbdec;
+}
+
+.modal-input::placeholder {
+  font-weight: 400;
 }
