@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="background-olive">
+  <body class="background-olive backlight">
     <header class="main-header container">
       <nav class="main-menu">
         <div class="logo-menu-wrapper">
@@ -64,8 +64,8 @@
 
         <nav class="breadcrumbs">
             <ul>
-              <li><a href="index.html">Главная »</a></li>
-              <li><a href="#">Каталог »</a></li>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Каталог</a></li>
               <li><a class="active-page">Сливочное</a></li>
             </ul>
         </nav>
@@ -87,11 +87,19 @@
         </div>
 
         <div class="price-container">
-          <span class="subtitle">Цена: 100 руб. - 500 руб.</span>
-          <p class="price-wrapper">
-            <label for="price"></label>
-            <input type="range" name="price" min="0" max="700" step="100" id="price">
-          </p>
+          <div class="filter-range-title">Цена:
+              <label class="min-price"><input type="text" name="min-price" value="100 руб."></label>
+              <label class="max-price"><input type="text" name="max-price" value="500 руб."></label>
+          </div>
+          <div class="price-controls">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+          </div>
         </div>
 
         <div class="fat-container">
@@ -100,7 +108,7 @@
             <label class="fat-radio">
               <input type="radio" name="fat" class="visually-hidden">
               <span class="radio-indicator"></span>
-              <span class=caption1>0%<span>
+              <span class=caption1>0%</span>
             </label>
 
             <label class="fat-radio">
@@ -382,13 +390,15 @@
       </section>
 
       <div class="paginator">
-        <a class="prev arrow-disabled" href="#prev">Назад</a>
-        <a class="current page">1</a>
-        <a class="page" href="#">2</a>
-        <a class="page" href="#">3</a>
-        <a class="page" href="#">4</a>
-        <a class="page" href="#">5</a>
-        <a class="next" href="#next">Вперёд</a>
+        <ul>
+          <li><a class="prev arrow-disabled" href="#prev"><span class="hidden">Назад</span></a></li>
+          <li><a class="current page"><span class="centerer">1</span></a></li>
+          <li><a class="page" href="#"><span class="centerer">2</span></a></li>
+          <li><a class="page" href="#"><span class="centerer">3</span></a></li>
+          <li><a class="page" href="#"><span class="centerer">4</span></a></li>
+          <li><a class="page" href="#"><span class="centerer">5</span></a></li>
+          <li><a class="next" href="#next"><span class="hidden">Вперёд</span></a></li>
+        </ul>
       </div>
     </main>
 
@@ -447,21 +457,29 @@
       <button type="submit" class="visually-hidden">поиск</button>
     </form>
 
-    <form class="basket-form">
-      <div>
-        <span>Пломбир с апельсиновым джемом</span>
-        <span>1,5кг x 200руб.<span>
-        <span>300руб.</span>
-      </div>
+    <section class="basket-modal">
+      <table class="basket-table">
+        <tr>
+          <td><button class="close1" type="button">Закрыть></button></td>
+          <td><img src="img/ice-cream1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+          <td class="ice-cream"><a>Пломбир с апельсиновым джемом</a></td>
+          <td>1,5 кг x <span>200 руб.</span></td>
+          <td>300 руб.</td>
+        </tr>
 
-      <div>
-        <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-        <span>1,5кг x 300руб.</span>
-        <span>450руб.</span>
+        <tr>
+          <td><button class="close2" type="button">Закрыть></button></td>
+          <td><img src="img/ice-cream2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+          <td class="ice-cream"><a>Клубничный пломбир с присыпкой из белого шоколада</a></td>
+          <td>1,5 кг x <span>300 руб.</span></td>
+          <td>450 руб.</td>
+        </tr>
+      </table>
+      
+      <div class="output-wrapper">
+        <p><b>Итого:750 руб.</b></p>
+        <button class="button" type="submit">Оформить заказ</button>
       </div>
-
-      <p><b>Итого: 750руб.</b></p>
-      <button class="button" type="submit">Оформить заказ</button>
-    </form>
+    </section>
   </body>
 </html>
