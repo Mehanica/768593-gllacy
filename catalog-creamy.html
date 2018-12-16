@@ -33,22 +33,75 @@
         </div>
 
         <ul class="user-navigation">
-          <li>
-            <a class="search" href="#">
+          <li class="search-link-wrapper search-catalog">
+            <a class="search-link" href="#">
               <span class="visually-hidden">Поиск</span>
 
               <svg class="loupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
             </a>
+
+            <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="search-field">поле для поиска</label>
+              <input class="modal-input" type="search" name="search" placeholder="Что ищем?" id="search-field">
+
+              <button type="submit" class="visually-hidden">поиск</button>
+            </form>
           </li>
 
-          <li>
-            <a class="login" href="#">Вход
+          <li class="login-wrapper login-catalog">
+            <a class="login-link" href="#">Вход
               <svg class="entrance" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#ffffff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
             </a>
+
+            <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="user-email">поле для ввода электронной почты пользователя</label>
+              <input class="modal-input" type="email" name="mail" placeholder="Электронная почта" id="user-email">
+        
+              <label class="visually-hidden" for="user-password">поле для ввода пароля пользователя</label>
+              <input class="modal-input" type="password" name="password" placeholder="Пароль" id="user-password">
+        
+              <div class="button-link-wrapper">
+                <button class="button" type="submit">Войти</button>
+                <div>
+                  <a href="#"> 
+                    <p>Забыли пароль?</p>
+                  </a>
+                
+                  <a href="#">
+                    <span>Новая регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </form>
           </li>
 
-          <li>
-            <a class="basket" href="#" aria-label="Корзина">2 товара</a>
+          <li class="full-basket">
+            <a class="basket full" href="#" aria-label="Корзина">2 товара</a>
+
+            <section class="basket-modal">
+              <table class="basket-table">
+                <tr>
+                  <td><button class="close1" type="button">Закрыть></button></td>
+                  <td><img src="img/ice-cream1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                  <td class="ice-cream"><a>Пломбир с апельсиновым джемом</a></td>
+                  <td>1,5 кг x <span>200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+        
+                <tr>
+                  <td><button class="close2" type="button">Закрыть></button></td>
+                  <td><img src="img/ice-cream2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                  <td class="ice-cream"><a>Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                  <td>1,5 кг x <span>300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+              </table>
+              
+              <div class="output-wrapper">
+                <p><b>Итого: 750 руб.</b></p>
+                <button class="button" type="submit">Оформить заказ</button>
+              </div>
+            </section>
           </li>
         </ul>
       </nav>
@@ -78,12 +131,14 @@
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <div class="sorting-wrapper">
           <label for="sorting"><span class="subtitle">Сортировка:</span></label>
-          <select class="sorting" name="sorting" id="sorting">
-            <option value="popular">по популярности</option>
-            <option value="not-expensive">сначала не дорогие</option>
-            <option value="expensive">сначала дорогие</option>
-            <option value="fat-content">по жирности</option>
-          </select>
+          <div class="select-arrow">
+            <select class="sorting arrow" name="sorting" id="sorting">
+              <option value="popular">по популярности</option>
+              <option value="not-expensive">сначала не дорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat-content">по жирности</option>
+            </select>
+          </div>
         </div>
 
         <div class="price-container">
@@ -103,7 +158,7 @@
         </div>
 
         <div class="fat-container">
-          <span class="subtitle">Жирность</span>
+          <span class="subtitle">Жирность:</span>
           <p class="fat-wrapper">
             <label class="fat-radio">
               <input type="radio" name="fat" class="visually-hidden">
@@ -132,7 +187,7 @@
         </div>
 
         <div class="fillers-container">
-          <span class="subtitle">Наполнители</span>
+          <span class="subtitle">Наполнители:</span>
           <p class="fillers">
             <label class="fillers-checkbox">
               <input type="checkbox" name="chocolate" class="visually-hidden" checked>
@@ -192,7 +247,7 @@
 
         <article class="catalog-item">
           <p class="catalog-item-image">
-            <img src="img/creamy-coffee-with-chocolate-pieces.png" width="267" height="267" alt="Сливочное-кофейное с кусочками шоколада">
+            <img src="img/creamy-coffee-with-chocolate-pieces.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           </p>
 
           <p class="catalog-item-price">
@@ -202,7 +257,7 @@
           </p>
 
           <a class="catalog-item-link" href="#">
-            <h4><span class="catalog-item-title">Сливочное-кофейное с кусочками шоколада</span></h4>
+            <h4><span class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</span></h4>
           </a>
 
           <a href="#" class="button">Быстрый просмотр</a>
@@ -210,7 +265,7 @@
 
         <article class="catalog-item">
           <p class="catalog-item-image">
-            <img src="img/creamy-strawberry.png" width="267" height="267" alt="Сливочное-клубничное с присыпкой из белого шоколада">
+            <img src="img/creamy-strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           </p>
 
           <p class="catalog-item-price">
@@ -220,7 +275,7 @@
           </p>
 
           <a class="catalog-item-link" href="#">
-            <h4><span class="catalog-item-title">Сливочное-клубничное с присыпкой из белого шоколад</span></h4>
+            <h4><span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span></h4>
           </a>
 
           <a href="#" class="button">Быстрый просмотр</a>
@@ -428,58 +483,5 @@
         </p>
       </div>
     </footer>
-
-    <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
-      <label class="visually-hidden" for="user-email">поле для ввода электронной почты пользователя</label>
-      <input class="modal-input" type="email" name="mail" placeholder="Электронная почта" id="user-email">
-
-      <label class="visually-hidden" for="user-password">поле для ввода пароля пользователя</label>
-      <input class="modal-input" type="password" name="password" placeholder="Пароль" id="user-password">
-
-      <div class="button-link-wrapper">
-        <button class="button" type="submit">Войти</button>
-        <div>
-          <a href="#"> 
-            <p>Забыли пароль?</p>
-          </a>
-        
-          <a href="#">
-            <span>Новая регистрация</span>
-          </a>
-        </div>
-      </div>
-    </form>
-
-    <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-      <label class="visually-hidden" for="search-field">поле для поиска</label>
-      <input class="modal-input" type="search" name="search" placeholder="Что ищем?" id="search-field">
-
-      <button type="submit" class="visually-hidden">поиск</button>
-    </form>
-
-    <section class="basket-modal">
-      <table class="basket-table">
-        <tr>
-          <td><button class="close1" type="button">Закрыть></button></td>
-          <td><img src="img/ice-cream1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-          <td class="ice-cream"><a>Пломбир с апельсиновым джемом</a></td>
-          <td>1,5 кг x <span>200 руб.</span></td>
-          <td>300 руб.</td>
-        </tr>
-
-        <tr>
-          <td><button class="close2" type="button">Закрыть></button></td>
-          <td><img src="img/ice-cream2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-          <td class="ice-cream"><a>Клубничный пломбир с присыпкой из белого шоколада</a></td>
-          <td>1,5 кг x <span>300 руб.</span></td>
-          <td>450 руб.</td>
-        </tr>
-      </table>
-      
-      <div class="output-wrapper">
-        <p><b>Итого:750 руб.</b></p>
-        <button class="button" type="submit">Оформить заказ</button>
-      </div>
-    </section>
   </body>
 </html>
