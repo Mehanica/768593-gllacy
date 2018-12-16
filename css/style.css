@@ -246,6 +246,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.40);
   background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  z-index: 1;
 }
 
 .sub-menu li:hover:not(:first-of-type),
