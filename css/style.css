@@ -766,6 +766,7 @@ box-shadow: none;
   background-image: url("../img/wafer-background.jpg");
   background-repeat: no-repeat;
   background-color: #ebdfc7;
+  background-size: cover;
   border-radius: 15px;
 }
 
@@ -1252,7 +1253,7 @@ box-shadow: none;
 .htmlacademy-logo {
   position: relative;
   top: 1px;
-  left: -2px;
+  left: 0;
   align-self: center;
 }
 
@@ -1269,7 +1270,7 @@ box-shadow: none;
   width: 100%;
   text-align: right;
   box-shadow: 0 1px 0 0 #adbdb4;
-  margin-top: 43px;
+  margin-top: 46px;
   padding-bottom: 28px;
 }
 
@@ -1439,8 +1440,7 @@ box-shadow: none;
   border-color: #000000 transparent transparent transparent;
 }
 
-.sorting:hover,
-.sorting:focus {
+.sorting:hover {
   color: #000000;
   background-color: #ffffff;
 }
