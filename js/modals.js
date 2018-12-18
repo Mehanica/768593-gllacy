@@ -45,7 +45,7 @@ form.addEventListener("submit", function (evt){
     console.log("Нужно ввусти логин и почту");
   } else {
     if (isStorageSupport){
-      localStorage.setItem("name", login.value)
+      localStorage.setItem("name", login.value);
     }
   }
 });
@@ -55,7 +55,8 @@ window.addEventListener("keydown", function (evt){
     evt.preventDefault();
     if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error")
+      overlay.classList.remove("overlay-show")
+      popup.classList.remove("modal-error");
     }
   }
 })
