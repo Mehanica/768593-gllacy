@@ -970,6 +970,7 @@ box-shadow: none;
 
 .map iframe {
   position: relative;
+  border: none;
   z-index: 2;
 }
 
