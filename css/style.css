@@ -11,7 +11,7 @@ body {
 
 .site-wrapper {
   background-color: #849d8f;
-  background-image: url(../img/slide1.png);
+  background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -244,7 +244,7 @@ body {
   padding: 0;
   padding-bottom: 5px;
   padding-top: 6px;
-  bottom: -177px;
+  top: 31px;
   left: -6px;
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.40);
@@ -252,8 +252,8 @@ body {
   z-index: 1;
 }
 
-.sub-menu li:hover:not(:first-of-type),
-.sub-menu li:focus:not(:first-of-type) {
+.sub-menu li:hover,
+.sub-menu li:focus {
   background-color: #fbded7;
 }
 
@@ -291,7 +291,7 @@ body {
   background: #ffffff;
 }
 
-.sub-menu li:active:not(:first-of-type) {
+.sub-menu li:active {
   background-color: #f6b5a5
 }
 
@@ -446,10 +446,14 @@ box-shadow: none;
   margin: 0 auto;
 }
 
+.slider .slider1{
+  width: 670px;
+}
+
 .slider-item h2 {
-  margin: 0;
   margin: 0 auto;
   margin-bottom: 31px;
+  width: 650px;
 }
 
 .slider-item .button {
@@ -582,8 +586,8 @@ box-shadow: none;
 
 .offers {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 
 .offers h3 {
@@ -638,18 +642,20 @@ box-shadow: none;
 }
 
 .offers-item-crimson {
+  margin-bottom: 40px;
   background-size: cover;
   background-image: url("../img/crimson-background.jpg");
   background-color: #b65972;
 }
 
 .offers-item-chockolate {
+  margin-bottom: 40px;
   background-size: cover;
   background-image: url("../img/chockolate-background.jpg");
   background-color: #654336;
 }
 
-.catalog{
+.catalog {
   display: flex;
   flex-wrap: wrap;
 }
@@ -727,8 +733,7 @@ box-shadow: none;
   margin: 0;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.50);
   z-index: 2;
-    /*Mozila fix*/
-    min-width: 155px;
+  min-width: 155px;
 }
 
 .catalog-item-price b {
@@ -761,7 +766,7 @@ box-shadow: none;
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-  padding-bottom: 28px;
+  padding-bottom: 24px;
   background-image: url("../img/wafer-background.jpg");
   background-repeat: no-repeat;
   background-color: #ebdfc7;
@@ -798,7 +803,7 @@ box-shadow: none;
 .feature-item1::before {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 7px;
   width: 49px;
   height: 49px;
   background-image: url("../img/ice-cream.svg");
@@ -809,14 +814,14 @@ box-shadow: none;
   margin: 0;
   padding-left: 56px;
   padding-top: 5px;
-  padding-right: 13px;
-  width: 490px;
+  padding-right: 18px;
+  width: 485px;
 }
 
 .feature-item2::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 8px;
   width: 49px;
   height: 49px;
   background-image: url("../img/eco.svg");
@@ -826,7 +831,7 @@ box-shadow: none;
 .feature-item3::before {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 7px;
   left: -2px;
   width: 49px;
   height: 49px;
@@ -837,7 +842,7 @@ box-shadow: none;
 .feature-item4::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: -2px;
   width: 49px;
   height: 49px;
@@ -1036,7 +1041,7 @@ box-shadow: none;
 
 .footer-wrapper {
   display: flex;
-  margin-top: 15px;
+  margin-top: 18px;
   justify-content: space-between;
 }
 
@@ -1277,8 +1282,8 @@ box-shadow: none;
   text-align: right;
   vertical-align: middle;
   box-shadow: 0 1px 0 0 #adbdb4;
-  margin-top: 46px;
-  padding-bottom: 27px;
+  margin-top: 45px;
+  padding-bottom: 24px;
 }
 
 .paginator ul {
@@ -1309,9 +1314,10 @@ box-shadow: none;
   display: block;
   text-align: center;
   position: relative;
-  top: -2px;
+  top: -6px;
   width: 27px;
-  height: 27px;
+  height: 25px;
+  padding-top: 2px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1800,6 +1806,17 @@ padding-left: 46px;
   text-decoration: underline;
 }
 
+.login-form a:hover,
+.login-form a:focus,
+.login-form a:active,
+.button-link-wrapper p:hover,
+.button-link-wrapper p:focus,
+.button-link-wrapper p:active,
+.button-link-wrapper span:hover,
+.button-link-wrapper span:focus,
+.button-link-wrapper span:active {
+  color: #e84d37;
+}
 
 .login-catalog .login-form {
   margin-left: 167px;
@@ -2031,23 +2048,12 @@ padding-left: 46px;
   background: none;
 }
 
-.close1:after {
-  content: "";
-  position: absolute;
-  top: -16px;
-  left: 4px;
-  width: 14px;
-  height: 14px;
-  cursor: pointer;
-  background-image: url("../img/cross-small.svg");
-  background-repeat: no-repeat;
-}
-
+.close1:after,
 .close2:before {
   content: "";
   position: absolute;
   top: -16px;
-  left:4px;
+  left: 4px;
   width: 14px;
   height: 14px;
   cursor: pointer;
@@ -2173,25 +2179,16 @@ padding-left: 46px;
   border: 2px solid #8fbdec;
 }
 
-.modal-input::-webkit-input-placeholder {
-  font-weight: 400;
-  color: #999;
-  opacity: 1;
-}
-
-.modal-input:-ms-input-placeholder {
-  font-weight: 400;
-  color: #999;
-  opacity: 1;
-}
-
-.modal-input::-ms-input-placeholder {
-  font-weight: 400;
-  color: #999;
-  opacity: 1;
-}
-
 .modal-input::placeholder {
+  font-weight: 400;
+  color: #999;
+  opacity: 1;
+}
+
+.modal-input::placeholder,
+.modal-input::-webkit-input-placeholder,
+.modal-input:-ms-input-placeholder,
+.modal-input::-ms-input-placeholder {
   font-weight: 400;
   color: #999;
   opacity: 1;
