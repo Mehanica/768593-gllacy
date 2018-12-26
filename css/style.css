@@ -1789,12 +1789,12 @@ margin-right: 8px;
 .login-form a:hover,
 .login-form a:focus,
 .login-form a:active,
-.button-link-wrapper p:hover,
-.button-link-wrapper p:focus,
-.button-link-wrapper p:active,
-.button-link-wrapper span:hover,
-.button-link-wrapper span:focus,
-.button-link-wrapper span:active {
+.login-rorm-link:hover p,
+.login-rorm-link:focus p,
+.login-rorm-link:active p,
+.login-rorm-link:hover span,
+.login-rorm-link:focus span,
+.login-rorm-link:active span {
   color: #e84d37;
 }
 
@@ -2160,15 +2160,6 @@ margin-right: 8px;
 }
 
 .modal-input::placeholder {
-  font-weight: 400;
-  color: #999;
-  opacity: 1;
-}
-
-.modal-input::placeholder,
-.modal-input::-webkit-input-placeholder,
-.modal-input:-ms-input-placeholder,
-.modal-input::-ms-input-placeholder {
   font-weight: 400;
   color: #999;
   opacity: 1;
